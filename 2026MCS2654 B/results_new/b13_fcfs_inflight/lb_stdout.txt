@@ -1,0 +1,14 @@
+Load balancer (inflight) on 127.0.0.1:8000
+  backend 127.0.0.1:9001 healthy (depth 0)
+  backend 127.0.0.1:9002 healthy (depth 0)
+  backend 127.0.0.1:9003 healthy (depth 0)
+  backend 127.0.0.1:9004 healthy (depth 0)
+
+Load balancer summary (inflight)
+backend           forwarded  fraction  failed
+127.0.0.1:9001         1498     24.9%       0
+127.0.0.1:9002         1527     25.4%       0
+127.0.0.1:9003         1580     26.3%       0
+127.0.0.1:9004         1400     23.3%       0
+total forwarded: 6005
+health log: results_new/b13_fcfs_inflight/health_log.csv  dispatch log: results_new/b13_fcfs_inflight/lb_dispatch.csv

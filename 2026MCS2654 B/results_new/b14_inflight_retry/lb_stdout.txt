@@ -1,0 +1,14 @@
+Load balancer (inflight, retry) on 127.0.0.1:8000
+  backend 127.0.0.1:9001 healthy (depth 0)
+  backend 127.0.0.1:9002 healthy (depth 0)
+  backend 127.0.0.1:9003 healthy (depth 0)
+  backend 127.0.0.1:9004 healthy (depth 0)
+
+Load balancer summary (inflight)
+backend           forwarded  fraction  failed
+127.0.0.1:9001         1205     28.1%       0
+127.0.0.1:9002          611     14.2%     110
+127.0.0.1:9003         1208     28.2%       0
+127.0.0.1:9004         1267     29.5%       0
+total forwarded: 4291
+health log: results_new/b14_inflight_retry/health_log.csv  dispatch log: results_new/b14_inflight_retry/lb_dispatch.csv
