@@ -1,0 +1,8 @@
+**/server
+**/client
+**/lb
+**/run/
+**/store/
+**/client_lb.json
+**/metrics.csv
+**/__pycache__/

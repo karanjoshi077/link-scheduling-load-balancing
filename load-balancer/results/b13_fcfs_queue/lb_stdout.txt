@@ -1,0 +1,14 @@
+Load balancer (queue) on 127.0.0.1:8000
+  backend 127.0.0.1:9001 healthy (depth 0)
+  backend 127.0.0.1:9002 healthy (depth 0)
+  backend 127.0.0.1:9003 healthy (depth 0)
+  backend 127.0.0.1:9004 healthy (depth 0)
+
+Load balancer summary (queue)
+backend           forwarded  fraction  failed
+127.0.0.1:9001         1633     27.2%       0
+127.0.0.1:9002         1633     27.2%       0
+127.0.0.1:9003         1750     29.1%       0
+127.0.0.1:9004          989     16.5%       0
+total forwarded: 6005
+health log: results_new/b13_fcfs_queue/health_log.csv  dispatch log: results_new/b13_fcfs_queue/lb_dispatch.csv

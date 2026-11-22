@@ -1,0 +1,14 @@
+Load balancer (rr) on 127.0.0.1:8000
+  backend 127.0.0.1:9001 healthy (depth 0)
+  backend 127.0.0.1:9002 healthy (depth 0)
+  backend 127.0.0.1:9003 healthy (depth 0)
+  backend 127.0.0.1:9004 healthy (depth 0)
+
+Load balancer summary (rr)
+backend           forwarded  fraction  failed
+127.0.0.1:9001         1502     25.0%       0
+127.0.0.1:9002         1501     25.0%       0
+127.0.0.1:9003         1501     25.0%       0
+127.0.0.1:9004         1501     25.0%       0
+total forwarded: 6005
+health log: results_new/b13_fcfs_rr/health_log.csv  dispatch log: results_new/b13_fcfs_rr/lb_dispatch.csv

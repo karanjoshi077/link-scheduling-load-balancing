@@ -1,0 +1,15 @@
+name: Build C++ networking components
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile file server and client
+        run: make -C file-server
+      - name: Compile load balancer and backends
+        run: make -C load-balancer
